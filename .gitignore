@@ -1,0 +1,6 @@
+*/.zig-cache
+*/.vscode
+*/.zig-out
+/.vscode
+/.zig-cache
+/.zig-out
