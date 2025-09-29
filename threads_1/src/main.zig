@@ -2,7 +2,7 @@ const std = @import("std");
 
 fn delayedWork(ms: u64) void {
     std.debug.print("delayed work start\n", .{});
-    std.Thread.sleep(ms); // thread blocking
+    std.Thread.sleep(ms * std.time.ns_per_ms); // thread blocking
     std.debug.print("delayed work finished after {} ms\n", .{ms});
 }
 
